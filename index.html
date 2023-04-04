@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>She Codes Plus</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather">
+        <div class="border border-2 p-3 m-3 rounded-3 shadow">
+          <form id="search-form">
+            <div class="row">
+              <div class="col-7">
+                <input
+                  type="text"
+                  class="form-control"
+                  autofocus="on"
+                  autocomplete="off"
+                  id="city"
+                  placeholder="🔍  Enter the city..."
+                />
+              </div>
+              <div class="col-5">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="--bs-btn-font-weight: 600"
+                >
+                  Search
+                </button>
+                <button
+                  class="btn btn-secondary"
+                  style="--bs-btn-font-weight: 600"
+                  id="position"
+                >
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="today border-bottom">
+            <div class="row today-left">
+              <div class="col-6">
+                <h1>Odessa</h1>
+                <h6>
+                  <span class="temp">Day 9 / Night 2</span>
+                  <span class="units">
+                    <a href="#" id="celcius"> °C</a> |
+                    <a href="#" id="fahrenheit">°F</a>
+                  </span>
+                </h6>
+                <p class="date">Sunday | March 19 | 20:09</p>
+              </div>
+              <div class="col-2">
+                <p class="humid">Humidity <span id="curr-hum">68</span>%</p>
+                <p class="wind">Wind <span id="curr-wind">8</span>&nbsp;km/h</p>
+              </div>
+              <div class="col-2 now">
+                <p class="bg-body-secondary" id="curr-temp">+7</p>
+              </div>
+              <div class="col-2 icon">☁️</div>
+            </div>
+          </div>
+          <div class="forecast">
+            <div class="row days">
+              <div class="col">Mon</div>
+              <div class="col">Tue</div>
+              <div class="col">Wed</div>
+              <div class="col">Thu</div>
+              <div class="col">Fri</div>
+            </div>
+            <div class="row weather-icon">
+              <div class="col">
+                <img src="imgs/partly-cloud.png" alt="partly-cloud" />
+              </div>
+              <div class="col">
+                <img src="imgs/cloud.png" alt="cloud" />
+              </div>
+              <div class="col">
+                <img src="imgs/partly-cloud.png" alt="partly-cloud" />
+              </div>
+              <div class="col"><img src="imgs/rain.png" alt="rain" /></div>
+              <div class="col">
+                <img src="imgs/sunny.png" alt="sunny" />
+              </div>
+            </div>
+            <div class="row temperature">
+              <div class="col"><span>8°</span>/3°</div>
+              <div class="col"><span>10°</span>/5°</div>
+              <div class="col"><span>11°</span>/4°</div>
+              <div class="col"><span>13°</span>/6°</div>
+              <div class="col"><span>14°</span>/6°</div>
+            </div>
+            <div class="row humidity">
+              <div class="col">15%</div>
+              <div class="col">14%</div>
+              <div class="col">15%</div>
+              <div class="col">12%</div>
+              <div class="col">10%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

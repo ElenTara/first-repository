@@ -1,0 +1,81 @@
+h1 {
+  color: #ff1e78;
+}
+
+p {
+  margin-bottom: 0.2em;
+}
+.col span {
+  font-weight: bold;
+}
+.weather {
+  margin: 50px auto;
+  width: 50%;
+}
+.border {
+  background: linear-gradient(180deg, #ffffff 30%, #dcf5ff 70%);
+  color: #59607a;
+}
+.col-7 {
+  padding-right: 0;
+}
+.temp {
+  font-weight: inherit;
+}
+.units {
+  background-color: #e9ecef;
+  font-weight: inherit;
+  margin: 0 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#celcius,
+#fahrenheit {
+  font-weight: inherit;
+  text-decoration: none;
+}
+.date {
+  /* font-size: small; */
+  margin: 0;
+}
+.row.today-left {
+  padding-top: 6px;
+}
+.col-5 {
+  text-align: right;
+}
+.col-6 {
+  margin-left: 0px;
+}
+.col-2 {
+  padding: 2px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.col-2.now,
+.icon {
+  font-size: 55px;
+  font-weight: 600;
+  text-align: center;
+  padding: 2px;
+}
+
+.forecast {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+.days {
+  font-weight: 600;
+}
+.weather-icon {
+  font-size: 45px;
+}
+.temperature {
+  color: #ff1e78;
+}
+.humidity {
+  font-family: "Montserrat", sans-serif;
+  color: #0b5ed7;
+}
