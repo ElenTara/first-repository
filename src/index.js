@@ -128,29 +128,3 @@ function changeWeather(response) {
   let Humidity = Math.round(response.data.main.humidity);
   currHum.innerHTML = Humidity;
 }
-
-/* LATER Non fake...
-//Bonus Feature
-//Display a fake temperature (i.e 17) in Celsius and add a link to convert it to Fahrenheit. When clicking on it, it should convert the temperature to Fahrenheit. When clicking on Celsius, it should convert it back to Celsius.
-//changeUnits
-function changeFahrenheit(event) {
-  event.preventDefault();
-  let degrees = document.querySelector(".temp");
-  degrees.innerHTML = `Day ${Math.round((9 * 9) / 5 + 32)} / Night ${Math.round(
-    (2 * 9) / 5 + 32
-  )}`;
-  //fahrenheitLink.innerHTML = "<strong>°F</strong>";
-}
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", changeFahrenheit);
-
-function changeCelcius(event) {
-  event.preventDefault();
-  let degrees = document.querySelector(".temp");
-  degrees.innerHTML = `Day ${Math.round((48 - 32) / 1.8)} / Night ${Math.round(
-    (36 - 32) / 1.8
-  )}`;
-}
-let celciusLink = document.querySelector("#celcius");
-celciusLink.addEventListener("click", changeCelcius);
-*/
